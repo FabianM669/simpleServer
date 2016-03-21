@@ -7,6 +7,31 @@
     <link rel="stylesheet" type="text/css" href="build/main.css">
 </head>
 <body>
+<!-- Build a single page app with at least 3 pages
+aka views. One page should have a single nested view.(a view, within a view, within another view)
+
+the application should have a nav bar that 
+shows the active page/route. -->
+
+<div id="app"></div>
+<script type="text/template" id="app-template">
+    <div class="bar-slot"></div>
+    <div class="page-slot"></div>
+    
+
+</script>
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="node_modules/underscore/underscore.js"></script>
+<script type="text/javascript" src="node_modules/backbone/backbone.js"></script>
+<script type="text/javascript" src="src/js/components/appRouter.js"></script>
+<script type="text/javascript" src="src/js/components/appView.js"></script>
+<script type="text/javascript" src="src/js/components/barView.js"></script>
+<script type="text/javascript" src="src/js/components/homeView.js"></script>
+<script type="text/javascript" src="src/js/components/aboutView.js"></script>
+<script type="text/javascript" src="src/js/components/insideOfView.js"></script>
+<script type="text/javascript" src="src/js/components/newStuffView.js"></script>
+
 <script src ="src/js/main.js"></script>
 </body>
 </html>
