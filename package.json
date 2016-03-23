@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "npm run serve & npm run watch",
+    "serve": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:js && npm run build:css",
     "watch": "npm run watch:js & npm run watch:css",
@@ -29,5 +31,13 @@
     "url": "https://github.com/FabianM669/ProjectScaffold/issues"
   },
   "homepage": "https://github.com/FabianM669/ProjectScaffold#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.13.4",
+    "browserify": "^13.0.0",
+    "normalize.css": "^3.0.3",
+    "watchify": "^3.7.0",
+    "backbone": "^1.3.2",
+    "jquery": "^2.2.2"
+  }
 }
