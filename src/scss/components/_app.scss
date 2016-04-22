@@ -1,0 +1,11 @@
+@import '../vars';
+
+.app {
+    overflow-y: auto;
+    padding-bottom: $nav-height;
+}
+
+.appTitle {
+    text-align: center;
+    font-size: 4em;
+}

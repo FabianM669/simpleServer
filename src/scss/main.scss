@@ -1,4 +1,48 @@
 @import 'normalize';
-// @import 'components/nav';
+
+@import 'mixins/grid';
+@import 'mixins/aspect-ratio';
+
+@import 'components/app';
+@import 'components/nav';
+@import 'components/grid';
+// @import 'components/add-btn';
+@import 'components/category-table';
+@import 'components/form';
+@import 'components/home-button';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.app {
+    color: #333;
+}
+
+// body {
+//      width: 100%;
+//     z-index: -1;
+//     color: #333;
+//     background-size: cover;
+    // background-repeat: no-repeat;
+    // background-image: url(../img/skyline.png);
+    // position: fixed;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0; 
+// }
+
+// .home {
+//     // background-image: url(../img/server_bg.jpg);
+//     // background-color: white;
+//     // background-size: contain;
+//     // background-position: center center;
+//     // background-repeat: no-repeat;
+//     // padding-top: 100%;
+// }
 
 
+#toCategoryListView,
+#toTablesGridView {
+}

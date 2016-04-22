@@ -1,0 +1,63 @@
+@import '../vars';
+@import '../mixins/grid';
+
+.category-table {
+
+}
+
+.category {
+    position: relative;
+    padding: 1em;
+    background-color: $color-light-gray;
+
+    @include row();
+
+    input[type="checkbox"] {
+        position: relative;
+    }
+
+    input[type="checkbox"]:before {
+        content: 'Select';
+        position: absolute;
+        font-style: italic;
+        color: #ddd;
+        right: 100%;
+        margin-right: 0.5em;
+    }
+}
+
+.category:nth-child(2n + 1) {
+    background-color: $color-light-gray-light;
+}
+
+.category:hover {
+    background-color: $color-blue-light;
+    cursor: pointer;
+
+    input[type="checkbox"]:before {
+        color: #111;
+    }
+}
+
+.name,
+.actions {
+
+}
+
+.name {
+    font-size: 2em;
+    // @include column(1, 3);
+}
+
+.actions {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    // @include column(2, 3);
+}
+
+.description {
+    padding: 2em 0;
+    font-size: 1.3em;
+    font-style: italic;
+}

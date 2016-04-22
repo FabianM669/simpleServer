@@ -1,0 +1,45 @@
+@import '../vars';
+@import '../mixins/grid';
+
+.form {
+    padding: 1em;
+}
+
+.form input[type="text"],
+.form textarea {
+    padding: 1em;
+    background-color: $color-blue;
+    border: 0;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.form textarea {
+    height: 200px;
+}
+
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+    color: $color-blue-dark;
+    font-style: italic;
+}
+
+.field:not(:first-of-type) {
+    margin: 2em 0;
+}
+
+.checkboxes {
+    margin-top: 0.5em;
+    @include column(1, 3);
+    text-align: center;
+    font-size: 2em;
+}
+
+.checkboxes > * {
+    margin: 0 auto;
+    display: block;
+}
+
+.checkboxes > :first-child {
+    margin-bottom: 0.5em;
+}

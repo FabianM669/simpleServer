@@ -1,0 +1,12 @@
+@mixin column ($span, $of) {
+    width: $span / $of * 100%;
+    float: left;
+}
+
+@mixin row () {
+    &:after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+}

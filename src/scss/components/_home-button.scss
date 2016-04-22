@@ -1,0 +1,32 @@
+@import '../vars';
+@import '../mixins/grid';
+
+.home-buttons {
+    @include row();
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.home-buttons > div {
+    @include column(1, 2);
+    padding: 2em;
+    text-align: center;
+}
+
+.home-buttons > div > button {
+    background-color: white;
+    border: 2px solid $color-blue;
+    color: $color-blue;
+    width: 12em;
+    height: 12em;
+    font-size: 1.5em;
+    outline: none;
+}
+
+.home-buttons > div > button:hover {
+    color: white;
+    background-color: $color-blue;
+}

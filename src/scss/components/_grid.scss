@@ -1,0 +1,40 @@
+@import '../vars';
+@import '../mixins/grid';
+@import '../mixins/aspect-ratio';
+
+.grid {
+    @include row();
+}
+
+.box {
+    cursor: pointer;
+    color: $color-blue;
+    background-color: white;
+    // height: inherit;
+    border-right: 2px solid $color-blue;
+    border-bottom: 2px solid $color-blue;
+    box-sizing: border-box;
+    @include aspect-ratio(1, 1);
+    @include column(1, 3);
+}
+
+.box.is-selected,
+.box:hover {
+    background-color: $color-blue;
+    color: #fff;
+}
+
+.box-title {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    outline: none;
+}
+
+.box-title::selection {
+  background: $color-blue-dark;
+}

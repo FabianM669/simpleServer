@@ -1,0 +1,27 @@
+@import '../vars';
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: $nav-height;
+    width: 100%;
+    box-shadow: -2px 0px 4px 1px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.nav button {
+    height: 100%;
+    background-color: $color-blue;
+    flex: 1 1 0;
+    border: none;
+    outline: none;
+}
+
+.nav button:hover {
+    background-color: $color-blue-dark;
+}
+
+.nav.is-visible {
+    display: flex;
+}

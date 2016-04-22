@@ -1,0 +1,28 @@
+@import '../vars';
+
+.add-btn {
+    position: fixed;
+    bottom: 15%;
+    right: 10%;
+    border-radius: 50%;
+    background-color: $color-blue;
+    color: white;
+    border: 0;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+    z-index: 99;
+}
+
+.add-btn:after {
+    content: '+';
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    display: block;
+    line-height: 80px;
+    text-align: center;
+    position: relative;
+    bottom: 3px;
+}
